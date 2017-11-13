@@ -21,4 +21,13 @@ let avenirBold = "AvenirNext-Bold"
 //NOTIFICATIONS
 let USER_INFO_MODAL = "modalUserInfo"
 let NOTIF_PRESENT_MODAL = Notification.Name("presentModal")
+let NOTIF_CLOSE_MODAL = Notification.Name("closeModal")
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
+
+// User Defaults
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
+let USER_ALIAS = "userAlias"
+let USER_FULLNAME = "userFullName"

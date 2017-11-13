@@ -22,6 +22,7 @@ class ChatVC: NSViewController {
     
     @IBOutlet weak var sendMessageBtn: NSButton!
     
+    @IBOutlet weak var welcomeLbl: NSTextField!
     
     @IBAction func sendMessageBtnClicked(_ sender: Any) {
     }
@@ -37,6 +38,7 @@ class ChatVC: NSViewController {
     
     override func viewWillAppear() {
         setupView()
+        NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
     }
     
     
@@ -53,6 +55,14 @@ class ChatVC: NSViewController {
         
         sendMessageBtn.styleButtonText(button: sendMessageBtn, buttonName: "Send", fontColor: .darkGray, alignment: .center, font: avenirRegular, size: 13.0)
         
+    }
+    
+    @objc func userDataDidChange(_ notif: Notification) {
+        if UserDataService.instance.isLoggedIn {
+            DispatchQueue.main.async {
+                self.welcomeLbl.stringValue = "Welcome " + UserDataService.instance.name + "! Start chatting :)"
+            }
+        }
     }
     
     

@@ -33,7 +33,7 @@ class ToolbarVC: NSViewController {
     @IBOutlet weak var loginLbl: NSTextField!
     @IBOutlet weak var loginStack: NSStackView!
     
-    @IBOutlet weak var welcomeLbl: NSTextField!
+   
     
     
 
@@ -56,8 +56,12 @@ class ToolbarVC: NSViewController {
     
     func setUpView () {
         
-        //Creating a notification observer
+        //Creating a notification observer to open the modal
         NotificationCenter.default.addObserver(self, selector: #selector(ToolbarVC.presentModal(_:)), name: NOTIF_PRESENT_MODAL, object: nil)
+        
+        //Creating a notification observer to close the modal
+        NotificationCenter.default.addObserver(self, selector: #selector(ToolbarVC.closeModalNotif(_:)), name: NOTIF_CLOSE_MODAL, object: nil)
+        
         
         view.wantsLayer = true
         view.layer?.backgroundColor = chatGreen.cgColor
@@ -157,9 +161,13 @@ class ToolbarVC: NSViewController {
     @objc func closeModalClick (_ recognizer: NSClickGestureRecognizer){
         closeModal()
     }
+    
+    @objc func closeModalNotif(_ notif: Notification){
+        closeModal()
+    }
 
     //Close modal function
-    func closeModal(_ removeImmediately: Bool = false) {
+    @objc func closeModal(_ removeImmediately: Bool = false) {
         if removeImmediately {
            self.modalView.removeFromSuperview()
         } else {

@@ -43,7 +43,10 @@ class ModalLogin: NSView {
     
     
     @IBAction func closeModalClicked(_ sender: Any) {
+        //sending a notification back to the Observer in Toolbar.VC
+        NotificationCenter.default.post(name: NOTIF_CLOSE_MODAL, object: nil)
     }
+    
     
     @IBAction func adalLoginClicked(_ sender: Any) {
         
@@ -84,6 +87,15 @@ class ModalLogin: NSView {
             
             let userFullName = (result!.tokenCacheItem.userInformation?.givenName)! + " " + (result!.tokenCacheItem.userInformation?.familyName)!
             print(userFullName)
+            
+            //user successfuly logged in
+            UserDataService.instance.isLoggedIn = true
+            UserDataService.instance.name = userFullName
+            
+            //broadcasting notification to ChannelVC, userNameLbl
+            NotificationCenter.default.post(name: NOTIF_CLOSE_MODAL, object: nil)
+            NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+            
             
         }
         

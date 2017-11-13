@@ -12,6 +12,7 @@
 		2A956A001FB96B59000FBEBB /* AnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FB1FB96B58000FBEBB /* AnimalCell.xib */; };
 		2A956A011FB96B59000FBEBB /* ModalCreateAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FC1FB96B58000FBEBB /* ModalCreateAccount.xib */; };
 		2A956A021FB96B59000FBEBB /* ModalLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FD1FB96B58000FBEBB /* ModalLogin.xib */; };
+		2A956A051FB981EC000FBEBB /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A956A041FB981EC000FBEBB /* UserDataService.swift */; };
 		2AD112F41FAFEC490046380A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD112F31FAFEC490046380A /* AppDelegate.swift */; };
 		2AD112F61FAFEC490046380A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD112F51FAFEC490046380A /* ViewController.swift */; };
 		2AD112F81FAFEC490046380A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD112F71FAFEC490046380A /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		2A9569FB1FB96B58000FBEBB /* AnimalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalCell.xib; sourceTree = "<group>"; };
 		2A9569FC1FB96B58000FBEBB /* ModalCreateAccount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalCreateAccount.xib; sourceTree = "<group>"; };
 		2A9569FD1FB96B58000FBEBB /* ModalLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalLogin.xib; sourceTree = "<group>"; };
+		2A956A041FB981EC000FBEBB /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		2AD112F01FAFEC490046380A /* Slakish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slakish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD112F31FAFEC490046380A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AD112F51FAFEC490046380A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A956A031FB981D4000FBEBB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A956A041FB981EC000FBEBB /* UserDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2AD112E71FAFEC490046380A = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		2AD112F21FAFEC490046380A /* Slakish */ = {
 			isa = PBXGroup;
 			children = (
+				2A956A031FB981D4000FBEBB /* Services */,
 				2AD1131B1FB62F600046380A /* Xibs */,
 				2AD113101FB000D60046380A /* Utilities */,
 				2AD113051FAFEF5E0046380A /* Model */,
@@ -469,6 +480,7 @@
 				2AD1130E1FAFF6270046380A /* MainWindowController.swift in Sources */,
 				2AD112F61FAFEC490046380A /* ViewController.swift in Sources */,
 				2AD113121FB000F10046380A /* Constants.swift in Sources */,
+				2A956A051FB981EC000FBEBB /* UserDataService.swift in Sources */,
 				2AD112F41FAFEC490046380A /* AppDelegate.swift in Sources */,
 				2AD113141FB41CBD0046380A /* NSButton.swift in Sources */,
 				2AD1131F1FB62FC30046380A /* ModalLogin.swift in Sources */,

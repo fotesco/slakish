@@ -718,10 +718,10 @@
                                 </connections>
                             </containerView>
                             <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MPL-I2-723">
-                                <rect key="frame" x="383" y="231" width="91" height="24"/>
+                                <rect key="frame" x="408" y="231" width="66" height="24"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="bottom" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NvV-PZ-GPT">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="24"/>
                                         <subviews>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o2Z-db-esh">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -732,7 +732,7 @@
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="profileDefault" id="lEd-PX-ici"/>
                                             </imageView>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6kX-wi-8xL">
-                                                <rect key="frame" x="30" y="0.0" width="63" height="23"/>
+                                                <rect key="frame" x="30" y="0.0" width="38" height="23"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Login" id="954-fB-yat">
                                                     <font key="font" size="13" name="AvenirNext-Regular"/>
                                                     <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -757,27 +757,12 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="is7-Dt-hkR">
-                                <rect key="frame" x="122" y="231" width="237" height="25"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Welcome to Slakish!" id="BDV-mh-AYA">
-                                    <font key="font" size="15" name="AvenirNext-DemiBold"/>
-                                    <color key="textColor" red="0.30588235289999999" green="0.22352941179999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="MPL-I2-723" firstAttribute="leading" secondItem="is7-Dt-hkR" secondAttribute="trailing" constant="26" id="03e-nn-37R"/>
-                            <constraint firstItem="is7-Dt-hkR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="124" id="0Yi-dy-x5x"/>
-                            <constraint firstItem="is7-Dt-hkR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="14" id="4W4-wK-9V1"/>
                             <constraint firstItem="SKr-ec-nDU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="IM7-74-ZWI"/>
-                            <constraint firstItem="is7-Dt-hkR" firstAttribute="bottom" secondItem="MPL-I2-723" secondAttribute="bottom" id="KFn-I8-Z4z"/>
-                            <constraint firstItem="SKr-ec-nDU" firstAttribute="top" secondItem="is7-Dt-hkR" secondAttribute="bottom" constant="11" id="OU9-2k-NGc"/>
                             <constraint firstItem="MPL-I2-723" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="15" id="Owc-T7-qEx"/>
-                            <constraint firstItem="SKr-ec-nDU" firstAttribute="top" secondItem="is7-Dt-hkR" secondAttribute="bottom" constant="11" id="Zzj-TI-lAe"/>
                             <constraint firstAttribute="bottom" secondItem="SKr-ec-nDU" secondAttribute="bottom" id="d73-WJ-N1T"/>
                             <constraint firstItem="SKr-ec-nDU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="fQC-D5-NGP"/>
-                            <constraint firstItem="is7-Dt-hkR" firstAttribute="centerX" secondItem="SKr-ec-nDU" secondAttribute="centerX" id="gnY-So-WIc"/>
                             <constraint firstAttribute="trailing" secondItem="MPL-I2-723" secondAttribute="trailing" constant="6" id="hcJ-0a-wPK"/>
                             <constraint firstAttribute="trailing" secondItem="SKr-ec-nDU" secondAttribute="trailing" id="xJb-I9-Iuy"/>
                         </constraints>
@@ -786,7 +771,6 @@
                         <outlet property="loginImg" destination="o2Z-db-esh" id="9pD-CK-FWD"/>
                         <outlet property="loginLbl" destination="6kX-wi-8xL" id="88C-UY-ITC"/>
                         <outlet property="loginStack" destination="NvV-PZ-GPT" id="CQr-Vh-gXk"/>
-                        <outlet property="welcomeLbl" destination="is7-Dt-hkR" id="bgA-Js-bwx"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1095,6 +1079,7 @@
                         <outlet property="sendMessageBtn" destination="Z8K-4S-WwX" id="2hm-pK-4u4"/>
                         <outlet property="tableView" destination="fPI-VB-dz8" id="msW-dz-Api"/>
                         <outlet property="typingUserLbl" destination="i3A-lh-Ymu" id="1ec-Hd-c70"/>
+                        <outlet property="welcomeLbl" destination="Alf-4Y-QVA" id="HCv-eK-v6U"/>
                     </connections>
                 </viewController>
                 <customObject id="vll-C8-WbU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
