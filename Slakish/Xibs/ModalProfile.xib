@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ModalProfile" customModule="DevslopesSlack" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTxt" destination="LXO-hg-362" id="P04-8a-G3H"/>
+                <outlet property="logoutBtn" destination="tvf-4F-LWG" id="8vl-Fg-w4y"/>
+                <outlet property="profileImg" destination="6LS-dE-btU" id="PKX-e4-nx5"/>
+                <outlet property="userNameTxt" destination="T9m-hq-O0K" id="jn5-xK-RUn"/>
+                <outlet property="view" destination="c22-O7-iKe" id="Eji-Eb-dpl"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="22" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGp-NS-0Ca">
+                    <rect key="frame" x="72.5" y="46" width="330" height="208"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8z-vz-7FJ">
+                            <rect key="frame" x="132.5" y="176" width="65" height="32"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Profile" id="NUZ-tl-egl">
+                                <font key="font" size="19" name="AvenirNext-Bold"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="30" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYb-gc-DOl">
+                            <rect key="frame" x="0.0" y="54" width="330" height="100"/>
+                            <subviews>
+                                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ig-eg-RKN">
+                                    <rect key="frame" x="0.0" y="22" width="200" height="56"/>
+                                    <subviews>
+                                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz4-Lg-58c">
+                                            <rect key="frame" x="0.0" y="32" width="200" height="24"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9m-hq-O0K">
+                                                    <rect key="frame" x="-2" y="1" width="204" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="aRG-Xy-ywB"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="jonnyb" id="aIG-LT-cb0">
+                                                        <font key="font" size="13" name="AvenirNext-Regular"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-9y-ZCh">
+                                                    <rect key="frame" x="0.0" y="-2" width="200" height="5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="ap0-AI-I8A"/>
+                                                    </constraints>
+                                                </box>
+                                            </subviews>
+                                            <visibilityPriorities>
+                                                <integer value="1000"/>
+                                                <integer value="1000"/>
+                                            </visibilityPriorities>
+                                            <customSpacing>
+                                                <real value="3.4028234663852886e+38"/>
+                                                <real value="3.4028234663852886e+38"/>
+                                            </customSpacing>
+                                        </stackView>
+                                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boy-0O-GKT">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXO-hg-362">
+                                                    <rect key="frame" x="-2" y="1" width="204" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="fnq-4A-tM9"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="jonny@dev.com" id="vNt-wd-gV6">
+                                                        <font key="font" size="13" name="AvenirNext-Regular"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="ccF-jJ-WaZ">
+                                                    <rect key="frame" x="0.0" y="-2" width="200" height="5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="YN7-Gg-deS"/>
+                                                    </constraints>
+                                                </box>
+                                            </subviews>
+                                            <visibilityPriorities>
+                                                <integer value="1000"/>
+                                                <integer value="1000"/>
+                                            </visibilityPriorities>
+                                            <customSpacing>
+                                                <real value="3.4028234663852886e+38"/>
+                                                <real value="3.4028234663852886e+38"/>
+                                            </customSpacing>
+                                        </stackView>
+                                    </subviews>
+                                    <visibilityPriorities>
+                                        <integer value="1000"/>
+                                        <integer value="1000"/>
+                                    </visibilityPriorities>
+                                    <customSpacing>
+                                        <real value="3.4028234663852886e+38"/>
+                                        <real value="3.4028234663852886e+38"/>
+                                    </customSpacing>
+                                </stackView>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6LS-dE-btU">
+                                    <rect key="frame" x="230" y="0.0" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="O9m-cY-QHe"/>
+                                        <constraint firstAttribute="width" constant="100" id="XMn-oO-ogq"/>
+                                    </constraints>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="profileDefault" id="Lhn-r2-HXp"/>
+                                </imageView>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tvf-4F-LWG">
+                            <rect key="frame" x="102.5" y="0.0" width="125" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="WYL-jk-SNn"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Logout" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="nXt-CG-AWt">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="logoutBtnClicked:" target="-2" id="2bT-yW-rHB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="UZs-vO-xKA">
+                    <rect key="frame" x="442" y="267" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="bPT-HM-vLL"/>
+                        <constraint firstAttribute="height" constant="25" id="hO3-Oi-yjw"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="mac-loginClose" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mQs-mI-7mn">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeModalClicked:" target="-2" id="1Db-NY-Wit"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VGp-NS-0Ca" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="D1V-Zm-Xgf"/>
+                <constraint firstItem="UZs-vO-xKA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="rjM-Qh-UNY"/>
+                <constraint firstAttribute="trailing" secondItem="UZs-vO-xKA" secondAttribute="trailing" constant="8" id="uNb-uG-Pbh"/>
+                <constraint firstItem="VGp-NS-0Ca" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="xdn-Ge-Zdf"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="mac-loginClose" width="40" height="40"/>
+        <image name="profileDefault" width="100" height="100"/>
+    </resources>
+</document>

@@ -22,7 +22,7 @@ class ChatVC: NSViewController {
     
     @IBOutlet weak var sendMessageBtn: NSButton!
     
-   
+    
     @IBAction func sendMessageBtnClicked(_ sender: Any) {
     }
     

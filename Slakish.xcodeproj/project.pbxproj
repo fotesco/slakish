@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A9569FE1FB96B59000FBEBB /* ModalAddChannel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569F91FB96B58000FBEBB /* ModalAddChannel.xib */; };
+		2A9569FF1FB96B59000FBEBB /* ModalProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FA1FB96B58000FBEBB /* ModalProfile.xib */; };
+		2A956A001FB96B59000FBEBB /* AnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FB1FB96B58000FBEBB /* AnimalCell.xib */; };
+		2A956A011FB96B59000FBEBB /* ModalCreateAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FC1FB96B58000FBEBB /* ModalCreateAccount.xib */; };
+		2A956A021FB96B59000FBEBB /* ModalLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9569FD1FB96B58000FBEBB /* ModalLogin.xib */; };
 		2AD112F41FAFEC490046380A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD112F31FAFEC490046380A /* AppDelegate.swift */; };
 		2AD112F61FAFEC490046380A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD112F51FAFEC490046380A /* ViewController.swift */; };
 		2AD112F81FAFEC490046380A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD112F71FAFEC490046380A /* Assets.xcassets */; };
@@ -18,9 +23,89 @@
 		2AD113121FB000F10046380A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD113111FB000F10046380A /* Constants.swift */; };
 		2AD113141FB41CBD0046380A /* NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD113131FB41CBD0046380A /* NSButton.swift */; };
 		2AD1131A1FB61D1E0046380A /* ClickBlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD113191FB61D1E0046380A /* ClickBlockingView.swift */; };
+		2AD1131F1FB62FC30046380A /* ModalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD1131E1FB62FC30046380A /* ModalLogin.swift */; };
+		2AD113471FB665890046380A /* ADAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD113381FB665420046380A /* ADAL.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2AD113331FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B0965AA17F25770002BDFB8;
+			remoteInfo = ADALiOS;
+		};
+		2AD113351FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D664F1B41D302B9C0017B799;
+			remoteInfo = "ADAL-core";
+		};
+		2AD113371FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9453C3CC1C583E07006B9E79;
+			remoteInfo = ADAL;
+		};
+		2AD113391FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B0965BA17F25770002BDFB8;
+			remoteInfo = ADAL_iOS_UTs;
+		};
+		2AD1133B1FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B20DC5AD1F0D96A100957806;
+			remoteInfo = ADAL_iOS_ITs;
+		};
+		2AD1133D1FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9453C3FD1C586425006B9E79;
+			remoteInfo = "ADAL Mac";
+		};
+		2AD1133F1FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94DD18E11C5ACFBF00F80C62;
+			remoteInfo = ADAL_Mac_UTs;
+		};
+		2AD113411FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B20DC5D11F0D96A700957806;
+			remoteInfo = ADAL_Mac_ITs;
+		};
+		2AD113431FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04AB6D421D9D619B007E9A83;
+			remoteInfo = UnitTestHostApp;
+		};
+		2AD113451FB665420046380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D64C1F481DB9B05900850036;
+			remoteInfo = ADALAutomation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2A9569F91FB96B58000FBEBB /* ModalAddChannel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalAddChannel.xib; sourceTree = "<group>"; };
+		2A9569FA1FB96B58000FBEBB /* ModalProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalProfile.xib; sourceTree = "<group>"; };
+		2A9569FB1FB96B58000FBEBB /* AnimalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalCell.xib; sourceTree = "<group>"; };
+		2A9569FC1FB96B58000FBEBB /* ModalCreateAccount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalCreateAccount.xib; sourceTree = "<group>"; };
+		2A9569FD1FB96B58000FBEBB /* ModalLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalLogin.xib; sourceTree = "<group>"; };
 		2AD112F01FAFEC490046380A /* Slakish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slakish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD112F31FAFEC490046380A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AD112F51FAFEC490046380A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +120,11 @@
 		2AD113111FB000F10046380A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2AD113131FB41CBD0046380A /* NSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSButton.swift; sourceTree = "<group>"; };
 		2AD113191FB61D1E0046380A /* ClickBlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickBlockingView.swift; sourceTree = "<group>"; };
+		2AD1131E1FB62FC30046380A /* ModalLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLogin.swift; sourceTree = "<group>"; };
+		2AD113251FB665410046380A /* ADAL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ADAL.xcodeproj; path = "Slakish/azure-activedirectory-library-for-objc/ADAL/ADAL.xcodeproj"; sourceTree = "<group>"; };
+		478C542BCCDF61B1369F330E /* Pods-Slakish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slakish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slakish/Pods-Slakish.release.xcconfig"; sourceTree = "<group>"; };
+		B675DB6D51422E347BF731B8 /* Pods-Slakish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slakish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Slakish/Pods-Slakish.debug.xcconfig"; sourceTree = "<group>"; };
+		D689E2B0A81FABBB0A32DDAE /* Pods_Slakish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slakish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD113471FB665890046380A /* ADAL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +144,8 @@
 			children = (
 				2AD112F21FAFEC490046380A /* Slakish */,
 				2AD112F11FAFEC490046380A /* Products */,
+				2AD113231FB661210046380A /* Frameworks */,
+				43DD6084A09EF1241871CC9E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +160,7 @@
 		2AD112F21FAFEC490046380A /* Slakish */ = {
 			isa = PBXGroup;
 			children = (
+				2AD1131B1FB62F600046380A /* Xibs */,
 				2AD113101FB000D60046380A /* Utilities */,
 				2AD113051FAFEF5E0046380A /* Model */,
 				2AD113041FAFEF4D0046380A /* View */,
@@ -96,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD113191FB61D1E0046380A /* ClickBlockingView.swift */,
+				2AD1131E1FB62FC30046380A /* ModalLogin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +211,53 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		2AD1131B1FB62F600046380A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				2A9569FB1FB96B58000FBEBB /* AnimalCell.xib */,
+				2A9569F91FB96B58000FBEBB /* ModalAddChannel.xib */,
+				2A9569FC1FB96B58000FBEBB /* ModalCreateAccount.xib */,
+				2A9569FD1FB96B58000FBEBB /* ModalLogin.xib */,
+				2A9569FA1FB96B58000FBEBB /* ModalProfile.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		2AD113231FB661210046380A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AD113251FB665410046380A /* ADAL.xcodeproj */,
+				D689E2B0A81FABBB0A32DDAE /* Pods_Slakish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AD113261FB665410046380A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AD113341FB665420046380A /* libADALiOS.a */,
+				2AD113361FB665420046380A /* libADAL-core.a */,
+				2AD113381FB665420046380A /* ADAL.framework */,
+				2AD1133A1FB665420046380A /* ADAL_iOS_UTs.xctest */,
+				2AD1133C1FB665420046380A /* ADAL_iOS_ITs.xctest */,
+				2AD1133E1FB665420046380A /* ADAL.framework */,
+				2AD113401FB665420046380A /* ADAL_Mac_UTs.xctest */,
+				2AD113421FB665420046380A /* ADAL_Mac_ITs.xctest */,
+				2AD113441FB665420046380A /* UnitTestHostApp.app */,
+				2AD113461FB665420046380A /* ADALAutomation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43DD6084A09EF1241871CC9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B675DB6D51422E347BF731B8 /* Pods-Slakish.debug.xcconfig */,
+				478C542BCCDF61B1369F330E /* Pods-Slakish.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AD113001FAFEC490046380A /* Build configuration list for PBXNativeTarget "Slakish" */;
 			buildPhases = (
+				33748EFA78EBAB90EA3580AE /* [CP] Check Pods Manifest.lock */,
 				2AD112EC1FAFEC490046380A /* Sources */,
 				2AD112ED1FAFEC490046380A /* Frameworks */,
 				2AD112EE1FAFEC490046380A /* Resources */,
+				14B305A46960C8F7A57A0855 /* [CP] Embed Pods Frameworks */,
+				B2E377A3371C0DDA6961822B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +308,12 @@
 			mainGroup = 2AD112E71FAFEC490046380A;
 			productRefGroup = 2AD112F11FAFEC490046380A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AD113261FB665410046380A /* Products */;
+					ProjectRef = 2AD113251FB665410046380A /* ADAL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2AD112EF1FAFEC490046380A /* Slakish */,
@@ -170,17 +321,143 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		2AD113341FB665420046380A /* libADALiOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libADALiOS.a;
+			remoteRef = 2AD113331FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD113361FB665420046380A /* libADAL-core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libADAL-core.a";
+			remoteRef = 2AD113351FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD113381FB665420046380A /* ADAL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ADAL.framework;
+			remoteRef = 2AD113371FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD1133A1FB665420046380A /* ADAL_iOS_UTs.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ADAL_iOS_UTs.xctest;
+			remoteRef = 2AD113391FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD1133C1FB665420046380A /* ADAL_iOS_ITs.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ADAL_iOS_ITs.xctest;
+			remoteRef = 2AD1133B1FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD1133E1FB665420046380A /* ADAL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ADAL.framework;
+			remoteRef = 2AD1133D1FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD113401FB665420046380A /* ADAL_Mac_UTs.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ADAL_Mac_UTs.xctest;
+			remoteRef = 2AD1133F1FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD113421FB665420046380A /* ADAL_Mac_ITs.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ADAL_Mac_ITs.xctest;
+			remoteRef = 2AD113411FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD113441FB665420046380A /* UnitTestHostApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnitTestHostApp.app;
+			remoteRef = 2AD113431FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AD113461FB665420046380A /* ADALAutomation.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ADALAutomation.app;
+			remoteRef = 2AD113451FB665420046380A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		2AD112EE1FAFEC490046380A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A956A021FB96B59000FBEBB /* ModalLogin.xib in Resources */,
 				2AD112F81FAFEC490046380A /* Assets.xcassets in Resources */,
+				2A9569FE1FB96B59000FBEBB /* ModalAddChannel.xib in Resources */,
+				2A956A001FB96B59000FBEBB /* AnimalCell.xib in Resources */,
 				2AD112FB1FAFEC490046380A /* Main.storyboard in Resources */,
+				2A9569FF1FB96B59000FBEBB /* ModalProfile.xib in Resources */,
+				2A956A011FB96B59000FBEBB /* ModalCreateAccount.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B305A46960C8F7A57A0855 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slakish/Pods-Slakish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33748EFA78EBAB90EA3580AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2E377A3371C0DDA6961822B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slakish/Pods-Slakish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AD112EC1FAFEC490046380A /* Sources */ = {
@@ -194,6 +471,7 @@
 				2AD113121FB000F10046380A /* Constants.swift in Sources */,
 				2AD112F41FAFEC490046380A /* AppDelegate.swift in Sources */,
 				2AD113141FB41CBD0046380A /* NSButton.swift in Sources */,
+				2AD1131F1FB62FC30046380A /* ModalLogin.swift in Sources */,
 				2AD1131A1FB61D1E0046380A /* ClickBlockingView.swift in Sources */,
 				2AD1130B1FAFF4630046380A /* ChatVC.swift in Sources */,
 			);
@@ -321,6 +599,7 @@
 		};
 		2AD113011FAFEC490046380A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B675DB6D51422E347BF731B8 /* Pods-Slakish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Slakish/Slakish.entitlements;
@@ -336,6 +615,7 @@
 		};
 		2AD113021FAFEC490046380A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478C542BCCDF61B1369F330E /* Pods-Slakish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Slakish/Slakish.entitlements;

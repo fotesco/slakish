@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ModalLogin" customModule="Slakish" customModuleProvider="target">
+            <connections>
+                <outlet property="adalLoginBtn" destination="y0o-se-5my" id="Ux8-2g-kPz"/>
+                <outlet property="createAccountBtn" destination="Ngo-55-7jS" id="OvY-O5-9UE"/>
+                <outlet property="emailLoginBtn" destination="DOG-CY-TGb" id="RFa-vf-NhB"/>
+                <outlet property="passwordTxt" destination="mWT-ie-t7l" id="rYN-92-ggQ"/>
+                <outlet property="progressSpinner" destination="W49-mE-8pZ" id="7sK-mm-R9k"/>
+                <outlet property="stackView" destination="5sf-62-ajU" id="i0D-pQ-EqV"/>
+                <outlet property="userNameTxt" destination="cqa-uq-z4z" id="vq2-BQ-zuY"/>
+                <outlet property="view" destination="c22-O7-iKe" id="Bsx-rB-wgh"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sf-62-ajU">
+                    <rect key="frame" x="138" y="123" width="200" height="147"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FWY-ef-SJf">
+                            <rect key="frame" x="66" y="115" width="68" height="32"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sign In" id="umZ-4L-8fz">
+                                <font key="font" size="19" name="AvenirNext-Bold"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2d-h7-SFM" userLabel="email stack view">
+                            <rect key="frame" x="0.0" y="80" width="200" height="23"/>
+                            <subviews>
+                                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cqa-uq-z4z" userLabel="email">
+                                    <rect key="frame" x="-2" y="1" width="204" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="ZC6-iW-RLc"/>
+                                        <constraint firstAttribute="height" constant="22" id="agS-Q9-G18"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Email" id="Kew-fv-562">
+                                        <font key="font" size="13" name="AvenirNext-Regular"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="nextKeyView" destination="mWT-ie-t7l" id="SPK-m1-Dm8"/>
+                                    </connections>
+                                </textField>
+                                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="yRI-fU-Nse">
+                                    <rect key="frame" x="0.0" y="-2" width="200" height="5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="9pr-3j-Uaj"/>
+                                    </constraints>
+                                </box>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auW-wN-T2d" userLabel="passwrod stack view">
+                            <rect key="frame" x="0.0" y="44" width="200" height="24"/>
+                            <subviews>
+                                <secureTextField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mWT-ie-t7l" userLabel="password">
+                                    <rect key="frame" x="-2" y="1" width="204" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="Qec-qZ-zwk"/>
+                                    </constraints>
+                                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" focusRingType="none" placeholderString="Password" usesSingleLineMode="YES" id="xVY-sd-tpu">
+                                        <font key="font" size="13" name="AvenirNext-Regular"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <allowedInputSourceLocales>
+                                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                        </allowedInputSourceLocales>
+                                    </secureTextFieldCell>
+                                    <connections>
+                                        <action selector="enterPasswrodSent:" target="-2" id="seY-Kx-2Zy"/>
+                                        <outlet property="nextKeyView" destination="cqa-uq-z4z" id="3gZ-vj-u6h"/>
+                                    </connections>
+                                </secureTextField>
+                                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Qyx-sf-fQO">
+                                    <rect key="frame" x="0.0" y="-2" width="200" height="5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="phD-ZK-SkO"/>
+                                    </constraints>
+                                </box>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DOG-CY-TGb">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="1ki-Eq-vXx"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Login" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="zpL-zc-IT2">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="emailLoginBtnClicked:" target="-2" id="H1t-JO-dsa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ngo-55-7jS">
+                    <rect key="frame" x="197" y="20" width="82" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="Create Account" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="yXy-xD-06r">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="11" name="AvenirNext-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="createAccountBtnClicked:" target="-2" id="8zW-el-78E"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="KjU-Va-1oC">
+                    <rect key="frame" x="445" y="270" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="onC-k2-c3C"/>
+                        <constraint firstAttribute="height" constant="24" id="sOq-aK-3zn"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="mac-loginClose" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ngh-yS-sLs">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="closeModalClicked:" target="-2" id="ecw-mb-cFj"/>
+                    </connections>
+                </button>
+                <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="W49-mE-8pZ">
+                    <rect key="frame" x="222" y="181" width="32" height="32"/>
+                </progressIndicator>
+                <stackView distribution="fillProportionally" orientation="horizontal" alignment="centerY" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GOd-nu-eAd">
+                    <rect key="frame" x="162" y="67" width="153" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y0o-se-5my">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="138" id="QJn-mI-yxh"/>
+                            </constraints>
+                            <buttonCell key="cell" type="bevel" title="Microsoft Account" bezelStyle="rounded" imagePosition="right" alignment="right" imageScaling="proportionallyUpOrDown" inset="2" id="5tb-6h-D9E">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="14" name="AvenirNext-Regular"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="adalLoginClicked:" target="-2" id="AxU-Ez-FZc"/>
+                            </connections>
+                        </button>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-lJ-7Bj">
+                            <rect key="frame" x="138" y="9" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="7GD-WV-BQg"/>
+                                <constraint firstAttribute="height" constant="15" id="zPD-YC-a2n"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottomRight" imageScaling="proportionallyDown" image="iOS-Win-Icon" id="GGO-wL-4uK"/>
+                        </imageView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KjU-Va-1oC" secondAttribute="trailing" constant="6" id="0ru-Cx-j1S"/>
+                <constraint firstItem="W49-mE-8pZ" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Anr-Yc-Pfq"/>
+                <constraint firstItem="5sf-62-ajU" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Hqt-qp-j9P"/>
+                <constraint firstItem="W49-mE-8pZ" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" constant="-47" id="NvH-CK-0oM"/>
+                <constraint firstItem="Ngo-55-7jS" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="YCk-jG-eoP"/>
+                <constraint firstItem="KjU-Va-1oC" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="6" id="aJ7-tp-qsw"/>
+                <constraint firstItem="5sf-62-ajU" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" constant="-46.5" id="gXo-dZ-OM5"/>
+                <constraint firstAttribute="bottom" secondItem="Ngo-55-7jS" secondAttribute="bottom" constant="20" id="rDL-Tp-Vm5"/>
+            </constraints>
+            <point key="canvasLocation" x="144.5" y="204"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="iOS-Win-Icon" width="12" height="12"/>
+        <image name="mac-loginClose" width="40" height="40"/>
+    </resources>
+</document>
